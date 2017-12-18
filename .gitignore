@@ -1,0 +1,6 @@
+# Created by https://www.gitignore.io/api/python
+
+## Mac System Files ##
+**/.DS_Store
+node_modules/
+

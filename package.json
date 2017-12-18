@@ -1,0 +1,28 @@
+{
+  "name": "ethreyayi",
+  "version": "1.0.0",
+  "description": "Crypto currency ticker for current market rates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sengar23/ethreyayi.git"
+  },
+  "keywords": [
+    "Crypto",
+    "ticker",
+    "Telegram"
+  ],
+  "author": "sengar23",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sengar23/ethreyayi/issues"
+  },
+  "homepage": "https://github.com/sengar23/ethreyayi#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.29.0",
+    "request": "^2.83.0"
+  }
+}
