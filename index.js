@@ -7,7 +7,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = '332043233:AAFze8BV20LP23fCA9EuUQmaO2CYs1T2q08';
 const bot = new TelegramBot(token, {polling: true});
 var group = "-238244073";
-var coin_ids = ["bitcoin","ethereum","ripple", "stellar", "iota", "cardano", "monero", "neo", "stratis", "aeternity"];
+var coin_ids = ["bitcoin","bitcoin-cash", "ethereum", "litecoin", "ripple", "stellar", "iota", "cardano", "monero", "neo", "stratis", "aeternity"];
 bot.on('message', (msg) => {
     
     console.log(msg);
@@ -46,7 +46,8 @@ const parse_msg =(data)=>{
        return coin_ids.filter(function(anotherOne_el){
        		if(anotherOne_el == array_el.id){
        			message += "<b>"+array_el.name+"</b>"+":\n";
-       			message += "price: $"+array_el.price_usd+"\n";
+       			message += "Price in USD: $"+array_el.price_usd+"\n";
+            message += "Price in BTC: "+array_el.price_btc+"\n";
        			message += "24h change: "+array_el.percent_change_24h+"%\n\n";
        		}
           return anotherOne_el == array_el.id;
